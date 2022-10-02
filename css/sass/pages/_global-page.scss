@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  font-family: myFirstFont !important;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+%col-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.text-center-m {
+  @include breakpiont(mobile) {
+    text-align: center;
+  }
+}
+.flex-b-100 {
+  @include breakpiont(max-medium) {
+    flex-basis: 100% !important;
+  }
+}

@@ -1,0 +1,43 @@
+@mixin breakpiont($point) {
+    
+    @if $point == mobile{
+        @media (max-width: 767px) {
+            @content
+        };
+    } @else if $point == small{
+        @media (min-width: 768px) {
+            @content
+        };
+    }
+    @else if $point == max-medium{
+        @media (max-width: 992px) {
+            @content
+        };
+    }
+    @else if $point == medium{
+        @media (min-width: 992px) {
+            @content
+        };
+    }
+    @else if $point == large{
+        @media (min-width: 1200px) {
+            @content
+        }
+    }
+};
+@mixin overlay($color,$alpha) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color, $alpha);
+}
+@mixin keyFrame($animition-name){
+    @keyframes #{$animition-name}{
+        @content;
+    }
+    @-webkit-keyframes #{$animition-name}{
+        @content
+    }
+}

@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: myFirstFont !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .text-center-m {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .flex-b-100 {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+}
+
+.cutom-btn {
+  margin-right: 10px;
+}
+
+header .logo {
+  text-align: right;
+}
+
+/*Start services*/
+.services .boxes .box h2 {
+  text-align: right;
+}
+
+.services .boxes .box p {
+  text-align: right;
+}
+
+.services .boxes .box a {
+  text-align: right;
+}
+
+/*End services*/
+/*Start services*/
+.clint .boxes .box .box-body h2 {
+  text-align: right;
+}
+
+.clint .boxes .box .box-body p {
+  text-align: right;
+}
+
+.clint .boxes .box .box-body a {
+  text-align: right;
+}
+
+/*End services*/
+footer .blogs .blog h4 {
+  text-align: right;
+}
+
+footer .blogs .blog p {
+  text-align: right;
+}
+
+footer .info {
+  text-align: right;
+}
+
+.buttons {
+  display: block;
+}
+/*# sourceMappingURL=home-rtl.css.map */

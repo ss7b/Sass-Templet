@@ -1,0 +1,62 @@
+header{
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid $gray-color;
+    .container-s{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpiont(mobile){
+            flex-direction: column;
+        }
+    }
+    .logo{
+        max-width: 200px;
+        flex-basis: 30%;
+        text-align: $text-left;
+        h1{
+            font: {
+                size: 25px;
+                weight: bold;
+            };
+            text-transform: uppercase;
+            color: $red-color;
+        }
+        p{ 
+            color: $gray-color;
+        }
+    }
+    .navbar{
+        flex-basis: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $red-color;
+        border-radius: 6px;
+        li{
+            width: 25%;
+            text-align: center;
+            
+            a{
+                border-radius: 6px;
+                display: block;
+                padding:20px;
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    background-color: rgb(226, 40, 40);
+                }
+            }
+        }
+        @include breakpiont(mobile){
+            width: 100%;
+        }
+    }
+    .language{
+        @include breakpiont(mobile){
+            position: absolute;
+            bottom: 22px;
+            left: 13px;
+        }
+    }
+}
