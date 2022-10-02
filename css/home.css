@@ -322,6 +322,7 @@ header .navbar li a:hover {
 }
 
 .clint .boxes .box {
+  position: relative;
   background-color: #eee;
 }
 
@@ -333,6 +334,18 @@ header .navbar li a:hover {
 
 .clint .boxes .box img {
   max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .clint .boxes .box img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -6px;
+    border-radius: 50%;
+    top: -37px;
+    border: 3px solid #fff;
+  }
 }
 
 .clint .boxes .box .box-body {

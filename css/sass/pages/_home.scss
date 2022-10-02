@@ -92,6 +92,7 @@
     grid-template-columns: repeat(auto-fill, minmax(198px, 1fr));
     gap: 30px;
     .box {
+      position: relative;
       background-color: #eee;
       @include breakpiont(mobile){
         &:last-of-type{
@@ -100,6 +101,10 @@
       }
       img {
         max-width: 100%;
+        @include breakpiont(mobile){
+          position: absolute;
+          height: 50px;
+        }
       }
       .box-body {
         padding: 10px;
