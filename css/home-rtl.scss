@@ -36,14 +36,6 @@ header {
   .boxes {
     .box {
       .box-body {
-        img {
-          @include breakpiont(mobile) {
-            #{$text-right}: -6px ;
-          }
-        }
-        h2 {
-          text-align: $text-left;
-        }
         p {
           text-align: $text-left;
         }
