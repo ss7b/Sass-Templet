@@ -292,7 +292,7 @@ header .navbar li a:hover {
 }
 
 .services .boxes .box h2 {
-  font-size: 25;
+  font-size: 25px;
   font-weight: bold;
   font-text-align: left;
   color: #666;
@@ -341,7 +341,7 @@ header .navbar li a:hover {
     position: absolute;
     width: 80px;
     height: 80px;
-    left: -6px;
+    right: -6px;
     border-radius: 50%;
     top: -37px;
     border: 3px solid #fff;
@@ -495,5 +495,16 @@ footer .copyright {
   border-top: 1px solid #cbcbcb;
   margin-top: 20px;
   color: #888;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 767px) {
+  footer .copyright .text,
+  footer .copyright .other {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

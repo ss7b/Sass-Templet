@@ -1,48 +1,50 @@
 @import "sass/helper/variables";
-@import "sass/helper/mixins" ;
-@import "sass/pages/global-page" ;
-
-
+@import "sass/helper/mixins";
+@import "sass/pages/global-page";
 
 $text-left: right;
 $text-right: left;
+
 .cutom-btn {
   margin-right: 10px;
 }
-header{
-  .logo{
-      text-align: $text-left ;
+header {
+  .logo {
+    text-align: $text-left;
   }
 }
-
-
 
 /*Start services*/
 .services {
   .boxes {
     .box {
       h2 {
-          text-align: $text-left;
+        text-align: $text-left;
       }
-      p{
+      p {
         text-align: $text-left;
       }
       a {
-        
         text-align: $text-left;
       }
     }
-}}
+  }
+}
 /*End services*/
 /*Start services*/
 .clint {
   .boxes {
     .box {
       .box-body {
+        img {
+          @include breakpiont(mobile) {
+            #{$text-right}: -6px ;
+          }
+        }
         h2 {
           text-align: $text-left;
         }
-        p{
+        p {
           text-align: $text-left;
         }
         a {
@@ -54,21 +56,20 @@ header{
 }
 /*End services*/
 footer {
-.blogs {
-  .blog {
-
-    h4 {
-      text-align: $text-left;
-    }
-    p {
-      text-align: $text-left;
+  .blogs {
+    .blog {
+      h4 {
+        text-align: $text-left;
+      }
+      p {
+        text-align: $text-left;
+      }
     }
   }
+  .info {
+    text-align: $text-left;
+  }
 }
-.info {
-  text-align: $text-left;
-}
-}
-.buttons{
+.buttons {
   display: block;
 }

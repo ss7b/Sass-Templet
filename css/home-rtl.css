@@ -52,6 +52,12 @@ header .logo {
 
 /*End services*/
 /*Start services*/
+@media (max-width: 767px) {
+  .clint .boxes .box .box-body img {
+    left: -6px;
+  }
+}
+
 .clint .boxes .box .box-body h2 {
   text-align: right;
 }

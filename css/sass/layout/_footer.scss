@@ -1,7 +1,7 @@
 footer {
-    background-color: #c2c2c2;
-    margin-top: 50px;
-    padding: 50px 0 0;
+  background-color: #c2c2c2;
+  margin-top: 50px;
+  padding: 50px 0 0;
   .cols-container {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +65,7 @@ footer {
       padding: 10px;
       border: none;
       border-radius: 5px;
-      &:focus{
+      &:focus {
         outline: 1px solid $red-color;
       }
     }
@@ -75,12 +75,19 @@ footer {
       height: 150px;
     }
   }
-  .copyright{
+  .copyright {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
     border-top: 1px solid #cbcbcb;
     margin-top: 20px;
     color: #888;
+    flex-direction: row-reverse;
+    @include breakpiont(mobile) {
+      .text,
+      .other {
+        font-size: 14px;
+      }
+    }
   }
 }

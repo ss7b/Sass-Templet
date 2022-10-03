@@ -12,7 +12,7 @@
     color: #5d5d5d;
     width: 80%;
     margin: 30px auto;
-    @include breakpiont(mobile){
+    @include breakpiont(mobile) {
       width: 100%;
     }
   }
@@ -50,9 +50,9 @@
       }
     }
   }
-  .carousel-item{
-    height: 400px !important;}
-
+  .carousel-item {
+    height: 400px !important;
+  }
 }
 /*End slider*/
 /*Start services*/
@@ -64,7 +64,7 @@
       padding: 20px;
       h2 {
         font: {
-          size: 25;
+          size: 25px;
           weight: bold;
           text-align: $text-left;
         }
@@ -94,16 +94,21 @@
     .box {
       position: relative;
       background-color: #eee;
-      @include breakpiont(mobile){
-        &:last-of-type{
+      @include breakpiont(mobile) {
+        &:last-of-type {
           display: none;
         }
       }
       img {
         max-width: 100%;
-        @include breakpiont(mobile){
+        @include breakpiont(mobile) {
           position: absolute;
-          height: 50px;
+          width: 80px;
+          height: 80px;
+          #{$text-right}: -6px;
+          border-radius: 50%;
+          top: -37px;
+          border: 3px solid #fff;
         }
       }
       .box-body {
@@ -138,11 +143,11 @@
 .portfolio {
   .boxes {
     @extend %col-3;
-    .box{
+    .box {
       img {
-      max-width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }
-}
-/*End porfolio*/ 
+/*End porfolio*/
