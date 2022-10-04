@@ -30,6 +30,29 @@
   }
 }
 
+#to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #e2494cc9;
+  width: 50px;
+  height: 60px;
+  z-index: 999;
+  color: #eae6e6;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  opacity: 0;
+}
+
 .main-heading {
   position: relative;
 }
@@ -70,8 +93,8 @@
 .cutom-btn {
   padding: 2px 5px;
   color: #e2494c !important;
-  background-color: #c7c3c39c !important;
-  border: 1px solid #e2494c;
+  background-color: transparent !important;
+  border: 2px solid #e2494c;
   border-radius: 5px;
   margin-left: 10px;
   font-size: 10px;
@@ -79,6 +102,7 @@
   letter-spacing: 1px;
   position: relative;
   bottom: -14px;
+  opacity: 0;
 }
 
 @font-face {

@@ -9,9 +9,9 @@
 }
 .cutom-btn{
     padding: 2px 5px;
-    color: $red-color !important;
-    background-color: #c7c3c39c !important;
-    border: 1px solid $red-color;
+    color: #e2494c !important;
+    background-color: transparent !important;
+    border: 2px solid #e2494c;
     border-radius: 5px;
     margin-left: 10px;
     font-size: 10px;
@@ -19,4 +19,5 @@
     letter-spacing: 1px;
     position: relative;
     bottom: -14px;
+    opacity: 0;
 }

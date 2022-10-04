@@ -13,6 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 <body>
+    <span id="to-top"><i class="fas fa-arrow-up"></i></span>
     <header>
         <div class="container-s">
             <div class="logo text-center-m">
@@ -189,9 +190,9 @@
         </div>
         <div class="conatct flex-b-100" id="contact">
           <h3>Contact us</h3>
-          <form>
-            <input type="text" class="input-f" placeholder="Name">
-            <input type="email" class="input-f" placeholder="Email">
+          <form id="form">
+            <input type="text" class="input-f" name="name" placeholder="Name">
+            <input type="email" class="input-f" name="email" placeholder="Email">
             <textarea class="input-f sa" placeholder="your masage"></textarea>
             <input type="submit" value="submit" class="buttons">
           </form>
